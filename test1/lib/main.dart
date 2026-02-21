@@ -23,7 +23,10 @@ void main() {
           //se pone child porque es el HIJO de un WIDGET
           child: Text("Hello world"),
         ),
-        //floatingActionButton: FloatingActionButton(child: Text("Click")),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Text("Click"),
+        ),
       ),
     ),
   );
