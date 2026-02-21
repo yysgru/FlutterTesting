@@ -20,7 +20,7 @@ It is not intended for production use
 
 # Tutorials used:
 
-  - https://www.youtube.com/watch?v=VPvVD8t02U8
+  - https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ
   - https://codelabs.developers.google.com/codelabs/flutter-codelab-first
   - https://bloclibrary.dev/tutorials/flutter-counter/
   - https://www.youtube.com/watch?v=THCkkQ-V1-8
