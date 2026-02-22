@@ -46,7 +46,34 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.deepOrange,
       ),
       //especifica qué es lo que irá debajo de la barra superior
-      body: Center(
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text("Hello world"),
+          TextButton(
+            onPressed: () {},
+            style: TextButton.styleFrom(backgroundColor: Colors.blue),
+            child: Text("Click me AGAIN"),
+          ),
+          Container(
+            color: Colors.blue,
+            padding: EdgeInsets.all(20),
+            child: Text("Inside container"),
+          ),
+        ],
+      ),
+      //el container es aquel que sirve de envoltorio a otros widgets,
+      //representa el contenedor
+      /*Container(
+            //in the container
+            padding: EdgeInsets.all(20),
+            //outside the container
+            margin: EdgeInsets.all(30),
+            color: Colors.blue,
+            child: Text("Hola"),
+          ),*/
+      /*Center(
         //centraliza todo lo que está metido dentro
         //se pone child porque es el HIJO de un WIDGET
         child:
@@ -84,7 +111,7 @@ class Home extends StatelessWidget {
               icon: Icon(Icons.alternate_email),
               color: Colors.blue,
             ),
-      ),
+      ),*/
       floatingActionButton: FloatingActionButton(
         //función anónima de momento
         onPressed: () {},
