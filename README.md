@@ -18,6 +18,8 @@ It is not intended for production use
   
   6 - Check installation state and dependencies: flutter doctor
 
+  7 - Check for new dependencies in the "pubspec.yaml" file and install them into your project: flutter pub get
+
 # Tutorials used:
 
   - https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ
