@@ -47,6 +47,35 @@ class Home extends StatelessWidget {
       ),
       //especifica qué es lo que irá debajo de la barra superior
       body: Row(
+        children: [
+          Expanded(flex: 3, child: Image.asset("assets/descarga.jfif")),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.blue,
+              child: Text("1"),
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.red,
+              child: Text("2"),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.yellow,
+              child: Text("3"),
+            ),
+          ),
+        ],
+      ),
+      /*Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -62,7 +91,7 @@ class Home extends StatelessWidget {
             child: Text("Inside container"),
           ),
         ],
-      ),
+      ),*/
       //el container es aquel que sirve de envoltorio a otros widgets,
       //representa el contenedor
       /*Container(
