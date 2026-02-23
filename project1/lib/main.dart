@@ -4,8 +4,16 @@ void main() {
   runApp(MaterialApp(home: Project1()));
 }
 
-class Project1 extends StatelessWidget {
+class Project1 extends StatefulWidget {
   const Project1({super.key});
+
+  @override
+  State<Project1> createState() => _Project1State();
+}
+
+class _Project1State extends State<Project1> {
+  //variable que irá cambiando
+  int lvl = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +24,15 @@ class Project1 extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.grey[850],
         elevation: 0.0,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            lvl += 1;
+          });
+        },
+        backgroundColor: Colors.grey[800],
+        child: Icon(Icons.add),
       ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
@@ -50,7 +67,7 @@ class Project1 extends StatelessWidget {
             ),
             SizedBox(height: 10.0),
             Text(
-              "3000",
+              "$lvl",
               style: TextStyle(
                 color: Colors.amberAccent[200],
                 letterSpacing: 2.0,
