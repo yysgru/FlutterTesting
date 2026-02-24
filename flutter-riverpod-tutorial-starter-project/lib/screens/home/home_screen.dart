@@ -15,6 +15,7 @@ class HomeScreen extends ConsumerWidget {
   @override //                                 es un objeto que nos va a permitir
   //                                 usar métodos referentes al provider
   Widget build(BuildContext context, WidgetRef ref) {
+    //se usa este método para ver el estado del provider
     final allProducts = ref.watch(productProvider);
 
     return Scaffold(
