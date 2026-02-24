@@ -18,13 +18,10 @@ It is not intended for production use
   
   6 - Check installation state and dependencies: flutter doctor
 
-  7 - Check for new dependencies in the "pubspec.yaml" file and install them into your project: flutter pub get
-
 # Tutorials used:
 
   - https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ
   - https://codelabs.developers.google.com/codelabs/flutter-codelab-first
-  - https://bloclibrary.dev/tutorials/flutter-counter/
   - https://www.youtube.com/watch?v=THCkkQ-V1-8
   - https://bloclibrary.dev/tutorials/flutter-login/
   - https://www.youtube.com/playlist?list=PLB6lc7nQ1n4iYGE_khpXRdJkJEp9WOech
