@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_files/providers/cart_provider.dart';
 import 'package:riverpod_files/providers/products_provider.dart';
 import 'package:riverpod_files/shared/cart_icon.dart';
 
@@ -16,7 +17,8 @@ class HomeScreen extends ConsumerWidget {
   //                                 usar métodos referentes al provider
   Widget build(BuildContext context, WidgetRef ref) {
     //se usa este método para ver el estado del provider
-    final allProducts = ref.watch(productProvider);
+    final allProducts = ref.watch(productsProvider);
+    final cartProducts = ref.watch(cartProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -47,7 +49,28 @@ class HomeScreen extends ConsumerWidget {
                     height: 60,
                   ),
                   Text(allProducts[index].title),
-                  Text("€${allProducts[index].price}")
+                  Text("€${allProducts[index].price}"),
+                  //si los productos del carrito tienen el producto que esta iterando
+                  //entonces que salga un boton para quitarlo de la cesta
+                  if (cartProducts.contains(allProducts[index]))
+                    TextButton(
+                        onPressed: () {
+                          ref
+                              .read(cartProvider.notifier)
+                              .removeProduct(allProducts[index]);
+                        },
+                        child: const Text("Remove")),
+
+                  //si no lo contrario
+                  if (!cartProducts.contains(allProducts[index]))
+                    TextButton(
+                        onPressed: () {
+                          //se usa read para acceder a los métodos del notifier
+                          ref
+                              .read(cartProvider.notifier)
+                              .addProduct(allProducts[index]);
+                        },
+                        child: const Text("Add to Cart"))
                 ],
               ),
             );
