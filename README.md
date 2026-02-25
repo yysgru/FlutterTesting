@@ -22,9 +22,8 @@ It is not intended for production use
 
   - https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ
   - https://codelabs.developers.google.com/codelabs/flutter-codelab-first
-  - https://www.youtube.com/watch?v=THCkkQ-V1-8
-  - https://bloclibrary.dev/tutorials/flutter-login/
+  - https://www.youtube.com/playlist?list=PL4cUxeGkcC9i88WGZ9eIfQUWRgPstLFLp
   - https://www.youtube.com/playlist?list=PLB6lc7nQ1n4iYGE_khpXRdJkJEp9WOech
+  - https://supabase.com/docs/guides/getting-started/quickstarts/flutter
   - https://pub.dev/packages/dio
   - https://docs.flutter.dev/cookbook/forms/validation
-  - https://jsonplaceholder.typicode.com/posts
